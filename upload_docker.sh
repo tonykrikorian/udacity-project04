@@ -15,3 +15,6 @@ echo "Docker ID and Image: $dockerpath"
 # Push image to a docker repository
 docker tag tk-api:python-v1.0.100 dockerpath
 docker push tkrikoriam/tk-api:python-v1.0.100
+
+#Add a new tag image
+#docker push tkrikoriam/tk-api:tagname
