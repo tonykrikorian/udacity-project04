@@ -1,0 +1,6 @@
+version: '3'
+services:
+    python-microservice:
+        image: tkrikoriam/tk-api:python-v1.0.100
+        ports:
+            - 8000:80
