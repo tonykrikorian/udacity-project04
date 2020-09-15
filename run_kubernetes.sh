@@ -4,11 +4,11 @@
 
 # Step 1:
 # This is your Docker ID/path
-# dockerpath=<>
+  dockerpath=$IMAGE_NAME_TAG
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-
+kubectl 
 
 # Step 3:
 # List kubernetes pods

@@ -5,7 +5,8 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=tkrikoriam/tk-api:python-v1.0.101
+dockerpath="tkrikoriam/tk-api:python-v1.0.102"
+
 
 # Step 2:  
 # Authenticate & tag
@@ -14,5 +15,4 @@ echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-#docker tag tk-api:python-v1.0.100 dockerpath
-docker push tkrikoriam/tk-api:python-v1.0.101
+docker push $IMAGE_NAME_TAG

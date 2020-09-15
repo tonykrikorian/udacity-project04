@@ -5,6 +5,7 @@ import logging
 import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
+import os
 
 app = Flask(__name__)
 LOG = create_logger(app)
@@ -62,6 +63,7 @@ def predict():
     scaled_payload = scale(inference_payload)
     LOG.info(f"Scaled payload DataFrame: \n{scaled_payload}")
     # get an output prediction from the pretrained model, clf
+    LOG.info(f"Server hostname is {os.getenv('HOSTNAME')}")
     prediction = list(clf.predict(scaled_payload))
     # TO DO:  Log the output prediction value
     return jsonify({'prediction': prediction})
