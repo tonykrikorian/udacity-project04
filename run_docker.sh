@@ -13,4 +13,4 @@ docker images
 
 # Step 3: 
 # Run flask app
-docker run -d -p8000:80 --name udacity-python-ms tkrikoriam/tk-api:python-v1.0.102
+docker run -d -p8000:80 --name udacity-python-ms tkrikoriam/tk-api:python-v1.0.104
