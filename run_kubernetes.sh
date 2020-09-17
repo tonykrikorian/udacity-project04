@@ -5,10 +5,10 @@
 # Step 1:
 # This is your Docker ID/path
   dockerpath="tkrikoriam/tk-api:python-v1.0.102"
-  deploymentName="kubernetes-udacity"
+
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment kubernetes-udacity --image=$dockerpath
+kubectl apply -f app.py-deployment.yml
 kubectl get deployments
 
 # Step 3:
@@ -17,9 +17,9 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl expose deployment/$deploymentName --type="NodePort" --port 80
+kubectl apply -f app.py-service.yml
 kubectl get services
 
 
-#kubectl delete service/kubernetes-udacity
-#kubectl delete deploy/kubernetes-udacity
+#kubectl delete service/myapp-service
+#kubectl delete deploy/myapp
