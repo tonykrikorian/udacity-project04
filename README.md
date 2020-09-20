@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+[![Udacity](https://circleci.com/gh/tonykrikorian/udacity-project04.svg?style=svg)]
 
 ## Project Overview
 
