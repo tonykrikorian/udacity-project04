@@ -1,4 +1,4 @@
-[![Udacity](https://circleci.com/gh/tonykrikorian/udacity-project04.svg?style=svg)]
+[![tonykrikorian](https://circleci.com/gh/tonykrikorian/udacity-project04.svg?style=svg)]
 
 ## Project Overview
 
